@@ -29,7 +29,14 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
 import rosegraphics as rg
-wang = rg.SimpleTurtle('turtle')
-he = rg.SimpleTurtle('turtle')
-wang.left(10)
-he.right(10)
+window = rg.TurtleWindow()
+window.delay(21)
+he= rg.SimpleTurtle('turtle')
+he.Pen= rg.Pen('midnight blue',3)
+da = rg.SimpleTurtle('turtle')
+for k in range (20):
+    he.left(10)
+    da.right(10)
+    he.forward(20)
+    da.forward(20)
+
